@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewreport" content="width=device-width, initial-scale=1.0">
+	<title>
+		feedback system
+	</title>
+	<style>
+		body{
+			background-image:url("https://img.freepik.com/free-photo/buddha-statue-with-natural-water-landscape_23-2150774101.jpg?t=st=1715670718~exp=1715674318~hmac=e03365425a9920ace430378e2a91d50df7d8e24368b058b8e7b104f09ef37f73&w=1380");
+			background-size:cover;
+		}
+		.nav-link{
+			color:black;
+			font-weight: bold;
+		}
+		.navbar-brand{
+			font-weight:bold;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}/>
+</head>
+<body>
+	<div class="container-fluid banner">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-md">
+					<div class="navbar-brand">Feedback System</div>
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="{{url_for('home')}}">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{url_for('aboutus')}}">ABOUT US</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{url_for('contactus')}}">CONTACT US</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link" href="{{url_for('logout')}}">LOGOUT</a>
+						</li>	
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-8 offset-md-2 info"><br><br><br>
+				<h1 class="text-center">PB SIDDHARTHA COLLEGE</h1>
+				<p class="text-center">
+					Listening actively,taking the time to analyze, and then thinking 
+                          of the best possible solution to perform better
+				</p><br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

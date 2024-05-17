@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faculty-login</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-image:url("https://img.freepik.com/free-photo/buddha-statue-with-natural-water-landscape_23-2150774101.jpg?t=st=1715670718~exp=1715674318~hmac=e03365425a9920ace430378e2a91d50df7d8e24368b058b8e7b104f09ef37f73&w=1380");
+            background-size:cover;
+        }
+        label{
+            color:black;
+        }
+        .btnstyle{
+            background-color:pink;
+            color:black;
+            padding: 10px;
+            border-radius:8px;
+            border:none;
+            margin:10px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+        </style>
+</head>
+<body>
+    <center>
+        <h1 style="color:black">Login</h1></center>
+        <div style="margin-left:42%;; margin-top:5%">
+        <form method="POST">
+            <label>Faculty id:</label>
+            <p><input placeholder="Enter faculty id"type="text" name="fid" required/></p>
+            <label>Password:</label>
+            <p><input placeholder="Enter password"type="password" name="password" required/></p>
+            <a href ="{{url_for('dashboard')}}"><button class="btnstyle">Login</button></a>
+            <a href="{{url_for('register')}}" target="blank" style="color:black">No Account</a>
+            <p></p><a href="{{url_for('forget')}}" target="blank" style="color:black">Forget password?</a></p>
+        </form>
+    </center

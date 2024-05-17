@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-image: url("https://img.freepik.com/free-photo/buddha-statue-with-natural-water-landscape_23-2150774101.jpg?t=st=1715670718~exp=1715674318~hmac=e03365425a9920ace430378e2a91d50df7d8e24368b058b8e7b104f09ef37f73&w=1380");
+            background-size: cover;
+        }
+        label {
+            color:black;
+        }
+        .btnstyle {
+            background-color: rgb(143, 235, 135);
+            color:black;
+            padding:10px;
+            border-radius: 8px;
+            border:none;
+            margin: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1 style="color:black">Registration</h1></center>
+    <div style="margin-left:42%;; margin-top:5%">
+    <form method="post">
+        <label>Employee Id:</label>
+        <p><input placeholder="Enter id" type="text" name="fid" required/></p>
+        <label>Name:</label>
+        <p><input placeholder="Enter name" type="text" name="fname" required/></p>
+        <label>Email:</label>
+        <p><input placeholder="Enter email" type="email" type="text" name="email" required/></p>
+        <label>Department:</label>
+        <p><input placeholder="Enter department" type="text" name="dept" required/></p>
+        <label>Password:</label>
+        <p><input placeholder="Enter password" type="password" name="password" required/></p>
+        <button class="btnstyle">Create Account</button>
+        <a  href="{{url_for('login')}}" target="_blank" style="color:black">Already Have an Account?</a>
+    </form>
+</div>
+</body>
+</html>
